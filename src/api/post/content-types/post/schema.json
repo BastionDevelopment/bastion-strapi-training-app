@@ -42,14 +42,6 @@
       "type": "text",
       "required": true
     },
-    "visibility": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "boolean"
-    },
     "cover": {
       "type": "media",
       "multiple": false,
