@@ -24,16 +24,7 @@
       },
       "type": "string"
     },
-    "content": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "blocks",
-      "required": true
-    },
-    "excerpt": {
+    "summary": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -73,15 +64,15 @@
       "type": "uid",
       "targetField": "title"
     },
-    "author": {
+    "authors": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::author.author",
       "inversedBy": "posts"
     },
-    "category": {
+    "categories": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::category.category",
       "inversedBy": "posts"
     },
@@ -92,6 +83,15 @@
         }
       },
       "type": "date",
+      "required": true
+    },
+    "content": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "richtext",
       "required": true
     }
   }
